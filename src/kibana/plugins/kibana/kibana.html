@@ -1,5 +1,50 @@
 <kbn-notifications list="notifList"></kbn-notifications>
 <div class="content" style="display: none;">
+
+<!-- TODO put this html file in shared folder -->
+<header class="header ng-scope">
+  <div class="container-fluid">
+    <div class="branding navbar-header">
+      <button class="navbar-toggle" data-target="#navbar-collapse" data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="fa fa-bars"></span>
+      </button>
+      <h1 class="text-hide site-title navbar-brand">Segovia</h1>
+    </div>
+    <nav class="collapse navbar-collapse ng-scope" id="navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="ng-isolate-scope">
+          <a class="nav-path ng-binding active" href="http://localhost:8000/dashboard">Dashboard</a>
+        </li>
+        <li class="ng-isolate-scope">
+          <a class="nav-path ng-binding" href="http://localhost:8000/activities/approvals">Activities</a>
+        </li>
+        <li class="ng-isolate-scope">
+          <a class="nav-path ng-binding" href="http://localhost:8000/payments">Payments</a>
+        </li>
+        <li class="ng-isolate-scope">
+          <a class="nav-path ng-binding" href="http://localhost:8000/recipients/search">Recipient Manager</a>
+        </li>
+        <li class="ng-isolate-scope">
+          <a class="nav-path ng-binding" href="http://localhost:8000/staff-manager">Staff Manager</a>
+        </li>
+        <li>
+          <a href="">Case Manager</a>
+        </li>
+        <li class="ng-isolate-scope">
+          <a class="nav-path ng-binding" href="http://localhost:8000/settings">Settings</a>
+        </li>
+      </ul>
+
+      <div class="userinfo">
+        <span class="ng-binding ng-scope">Hello</span>
+        <a class="logout ng-scope">Log Out</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
   <nav ng-hide="appEmbedded" bindonce class="navbar navbar-inverse navbar-static-top">
     <div class="navbar-header">
       <button ng-click="showCollapsed = !showCollapsed" type="button" class="navbar-toggle">
